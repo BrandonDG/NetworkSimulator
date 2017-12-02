@@ -69,7 +69,7 @@ void buildPacketLogMsg(struct packet pck) {
 }
 
 void setPacketDataValue(char pa[], char va[], unsigned int pi, int s) {
-	for (unsigned int i = 0; i < s; i++) {
+	for (unsigned int i = 0; i < (unsigned int)s; i++) {
 		pa[pi++] = va[i];
 	}
 }
@@ -182,7 +182,7 @@ void processRevPacket(struct packet* ipck, struct packet* opck) {
 }
 
 int main(int argc, char **argv) {
-	int	                sd, new_sd, client_len, port;
+	int	                sd, new_sd, client_len, port, ws, rc;
 	struct	sockaddr_in server, client;
 	char	            rbuf[BUFLEN], sbuf[BUFLEN];
 	struct packet       rpck, spck, pck1, pck2;
@@ -221,20 +221,24 @@ int main(int argc, char **argv) {
 
 		printf(" Remote Address:  %s\n", inet_ntoa(client.sin_addr));
 
+		getClientMsg(rbuf, new_sd);
+		buildPacket(&pck1, rbuf);
+		printf("Recv\n");
+		rc = 1;
+		buildPacketLogMsg(pck1);
 
-		for (unsigned int i = 0; i < 15; i++) {
-			getClientMsg(rbuf, new_sd);
-			buildPacket(&pck1, rbuf);
-	
-			getClientMsg(rbuf, new_sd);
-			buildPacket(&pck2, rbuf);
-	
-			processRevPacket(&pck2, &spck);
-	
-			buildPacketData(spck, sbuf);
-			buildPacketLogMsg(spck);
-			send(new_sd, sbuf, BUFLEN, 0);
+		while (rc < 15) {
+			for (unsigned int i = 0; i < 5; i++) {
+				getClientMsg(rbuf, new_sd);
+				buildPacket(&pck1, rbuf);
+				++rc;
+				printf("Recv\n");
+			}
 		}
+		processRevPacket(&pck1, &spck);
+		buildPacketData(spck, sbuf);
+		buildPacketLogMsg(spck);
+		send(new_sd, sbuf, BUFLEN, 0);
 		
 		/*
 		getClientMsg(rbuf, new_sd);

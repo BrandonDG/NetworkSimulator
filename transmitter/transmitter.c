@@ -176,7 +176,7 @@ void processTrnsPacket(struct packet* ipck, struct packet* opck) {
 }
 
 int main (int argc, char **argv) {
-	int                sd, port;
+	int                sd, port, ws, ac, sc;
 	struct hostent	   *hp;
 	struct sockaddr_in server;
 	char               *host, **pptr;
@@ -223,32 +223,44 @@ int main (int argc, char **argv) {
 	spck.PacketType = 2;
 	spck.SeqNum = 1;
 	spck.AckNum = 1;
-	spck.WindowSize = 3;
+	spck.WindowSize = 5;
 	(spck.data)[0] = 'C';
 	(spck.data)[1] = '\0';
+	buildPacketData(spck, tbuf);
+	buildPacketLogMsg(spck, f);
+	send(sd, tbuf, BUFLEN, 0);
+	lspck = spck;
 
-	for (unsigned int i = 0; i < 15; i++) {
-		if (i != 0) {
-			processTrnsPacket(&lspck, &spck);
-		}
-		buildPacketData(spck, tbuf);
-		buildPacketLogMsg(spck, f);
-		send(sd, tbuf, BUFLEN, 0);
-		lspck = spck;
+	sc = 1;
 	
-		// Send the second here, process packet(last send, plus next one to be sent),
-		// build the data to be sent, then send
+	while (sc < 15) {
+
+		for (unsigned int i = 0; i < lspck.WindowSize; i++) {
+			processTrnsPacket(&lspck, &spck);
+			buildPacketData(spck, tbuf);
+			buildPacketLogMsg(spck, f);
+			send(sd, tbuf, BUFLEN, 0);
+			lspck = spck;
+			++sc;
+		}
+
+		printf("After Window loop\n");
+
+		/*
 		processTrnsPacket(&lspck, &spck);
 		buildPacketData(spck, tbuf);
 		buildPacketLogMsg(spck, f);
 		send(sd, tbuf, BUFLEN, 0);
 		lspck = spck;
 	
-		// Wait for ACK packet to be received
 		getServerMsg(rbuf, sd);
 		buildPacket(&rpck, rbuf);
 		printf("Received) PacketType: %d, SeqNum: %d, AckNum: %d, WindowSize: %d\n", rpck.PacketType, rpck.SeqNum, rpck.AckNum, rpck.WindowSize);
+		*/
 	}
+	getServerMsg(rbuf, sd);
+	buildPacket(&rpck, rbuf);
+	printf("Received) PacketType: %d, SeqNum: %d, AckNum: %d, WindowSize: %d\n", rpck.PacketType, rpck.SeqNum, rpck.AckNum, rpck.WindowSize);
 
 	/*
 	buildPacketData(spck, tbuf);
