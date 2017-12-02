@@ -21,19 +21,12 @@
 #include <strings.h>
 #include <arpa/inet.h>
 #include <unistd.h>
+#include "../list.c"
 
 #define SERVER_TCP_PORT 7005     	// Default port
 #define BUFLEN	        1024		// Buffer length
 #define TRUE	        1
 #define PAYLOAD         1024
-
-struct packet {
-	int  PacketType;
-	int  SeqNum;
-	char data[PAYLOAD];
-	int  WindowSize;
-	int  AckNum;
-};
 
 /*-----------------------------------------------------------------------
 --	FUNCTION:	getClientMsg
@@ -140,7 +133,7 @@ void buildPacket(struct packet* pck, char packetdata[]) {
 void buildPacketData(struct packet pck, char* pckdata) {
 	char pt[2], seq[7], ack[7], ws[4], pl[BUFLEN];
 	char t;
-	for (unsigned int i = 0; i <= 12; i++) {
+	for (unsigned int i = 0; i <= 16; i++) {
 		switch (i) {
 			case 0:
 				sprintf(pt, "%d", pck.PacketType);
@@ -151,17 +144,17 @@ void buildPacketData(struct packet pck, char* pckdata) {
 				setPacketDataValue(pckdata, seq, i, 6);
 				i += 5;
 			break;
-			case 5:
+			case 7:
 				sprintf(ack, "%d", pck.AckNum);
 				setPacketDataValue(pckdata, ack, i, 6);
 				i += 5;
 			break;
-			case 9:
+			case 13:
 				sprintf(ws, "%d", pck.WindowSize);
 				setPacketDataValue(pckdata, ws, i, 3);
 				i += 2;
 			break;
-			case 12:
+			case 16:
 				setPacketDataValue(pckdata, pck.data, i, 2);
 			break;
 			default:
@@ -227,18 +220,32 @@ int main(int argc, char **argv) {
 		rc = 1;
 		buildPacketLogMsg(pck1);
 
+		//list_t *packetlist = new_list();
+
 		while (rc < 15) {
-			for (unsigned int i = 0; i < 5; i++) {
+			struct node *head = malloc(sizeof(node));
+			getClientMsg(rbuf, new_sd);
+			buildPacket(&pck1, rbuf);
+			++rc;
+			fillValues(head, pck1);
+			for (unsigned int i = 1; i < (unsigned int)pck1.WindowSize; i++) {
 				getClientMsg(rbuf, new_sd);
 				buildPacket(&pck1, rbuf);
 				++rc;
-				printf("Recv\n");
+				insert_at_end(&head, pck1);
+			}
+			print(head);
+			for (node *p = head; p != 0; p = p->next) {
+				processRevPacket(&p->data, &spck);
+				buildPacketData(spck, sbuf);
+				buildPacketLogMsg(spck);
+				send(new_sd, sbuf, BUFLEN, 0);
 			}
 		}
-		processRevPacket(&pck1, &spck);
-		buildPacketData(spck, sbuf);
-		buildPacketLogMsg(spck);
-		send(new_sd, sbuf, BUFLEN, 0);
+		//processRevPacket(&pck1, &spck);
+		//buildPacketData(spck, sbuf);
+		//buildPacketLogMsg(spck);
+		//send(new_sd, sbuf, BUFLEN, 0);
 		
 		/*
 		getClientMsg(rbuf, new_sd);

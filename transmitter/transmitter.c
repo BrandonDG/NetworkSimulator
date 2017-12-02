@@ -101,7 +101,7 @@ void buildPacket(struct packet* pck, char packetdata[]) {
 void buildPacketData(struct packet pck, char pckdata[]) {
 	char pt[2], seq[7], ack[7], ws[4], pl[BUFLEN];
 	char t;
-	for (unsigned int i = 0; i <= 12; i++) {
+	for (unsigned int i = 0; i <= 16; i++) {
 		switch (i) {
 			case 0:
 				sprintf(pt, "%d", pck.PacketType);
@@ -112,17 +112,17 @@ void buildPacketData(struct packet pck, char pckdata[]) {
 				setPacketDataValue(pckdata, seq, i, 6);
 				i += 5;
 			break;
-			case 5:
+			case 7:
 				sprintf(ack, "%d", pck.AckNum);
 				setPacketDataValue(pckdata, ack, i, 6);
 				i += 5;
 			break;
-			case 9:
+			case 13:
 				sprintf(ws, "%d", pck.WindowSize);
 				setPacketDataValue(pckdata, ws, i, 3);
 				i += 2;
 			break;
-			case 12:
+			case 16:
 				setPacketDataValue(pckdata, pck.data, i, 1);
 			break;
 			default:
@@ -170,7 +170,7 @@ void processTrnsPacket(struct packet* ipck, struct packet* opck) {
 	opck->AckNum = ipck->AckNum;
 	opck->SeqNum = ipck->SeqNum + sizeof(ipck->data);
 	opck->PacketType = 2;
-	opck->WindowSize = 5;
+	opck->WindowSize = ipck->WindowSize;
 	opck->data[0] = 'S';
 	opck->data[1] = '\0';
 }
@@ -222,7 +222,7 @@ int main (int argc, char **argv) {
 	struct packet spck, rpck, lspck, lrpck;
 	spck.PacketType = 2;
 	spck.SeqNum = 1;
-	spck.AckNum = 1;
+	spck.AckNum = 2;
 	spck.WindowSize = 5;
 	(spck.data)[0] = 'C';
 	(spck.data)[1] = '\0';
@@ -243,8 +243,14 @@ int main (int argc, char **argv) {
 			lspck = spck;
 			++sc;
 		}
+		printf("After Window loop : W = %d \n", lspck.WindowSize);
 
-		printf("After Window loop\n");
+		for (unsigned int i = 0; i < lspck.WindowSize; i++) {
+			getServerMsg(rbuf, sd);
+			buildPacket(&rpck, rbuf);
+			printf("Received) PacketType: %d, SeqNum: %d, AckNum: %d, WindowSize: %d\n", rpck.PacketType, rpck.SeqNum, rpck.AckNum, rpck.WindowSize);
+		}
+		lspck.WindowSize++;
 
 		/*
 		processTrnsPacket(&lspck, &spck);
@@ -258,9 +264,9 @@ int main (int argc, char **argv) {
 		printf("Received) PacketType: %d, SeqNum: %d, AckNum: %d, WindowSize: %d\n", rpck.PacketType, rpck.SeqNum, rpck.AckNum, rpck.WindowSize);
 		*/
 	}
-	getServerMsg(rbuf, sd);
-	buildPacket(&rpck, rbuf);
-	printf("Received) PacketType: %d, SeqNum: %d, AckNum: %d, WindowSize: %d\n", rpck.PacketType, rpck.SeqNum, rpck.AckNum, rpck.WindowSize);
+	//getServerMsg(rbuf, sd);
+	//buildPacket(&rpck, rbuf);
+	//printf("Received) PacketType: %d, SeqNum: %d, AckNum: %d, WindowSize: %d\n", rpck.PacketType, rpck.SeqNum, rpck.AckNum, rpck.WindowSize);
 
 	/*
 	buildPacketData(spck, tbuf);
