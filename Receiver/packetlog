@@ -1,0 +1,696 @@
+Received: PacketType: 2, SeqNum: 1, AckNum: 2, WindowSize: 5
+Received: PacketType: 2, SeqNum: 1025, AckNum: 2, WindowSize: 5
+Received: PacketType: 2, SeqNum: 2049, AckNum: 2, WindowSize: 5
+Received: PacketType: 2, SeqNum: 3073, AckNum: 2, WindowSize: 5
+Received: PacketType: 2, SeqNum: 4097, AckNum: 2, WindowSize: 5
+Received: PacketType: 2, SeqNum: 5121, AckNum: 2, WindowSize: 5
+Sent: PacketType: 1, SeqNum: 1, AckNum: 1024, WindowSize: 5
+Sent: PacketType: 1, SeqNum: 1, AckNum: 2049, WindowSize: 5
+Sent: PacketType: 1, SeqNum: 1, AckNum: 3073, WindowSize: 5
+Sent: PacketType: 1, SeqNum: 1, AckNum: 4097, WindowSize: 5
+Sent: PacketType: 1, SeqNum: 1, AckNum: 5121, WindowSize: 5
+Sent: PacketType: 1, SeqNum: 1, AckNum: 6145, WindowSize: 5
+Received: PacketType: 2, SeqNum: 6145, AckNum: 2, WindowSize: 6
+Received: PacketType: 2, SeqNum: 7169, AckNum: 2, WindowSize: 6
+Received: PacketType: 2, SeqNum: 8193, AckNum: 2, WindowSize: 6
+Received: PacketType: 2, SeqNum: 9217, AckNum: 2, WindowSize: 6
+Received: PacketType: 2, SeqNum: 10241, AckNum: 2, WindowSize: 6
+Received: PacketType: 2, SeqNum: 11265, AckNum: 2, WindowSize: 6
+Sent: PacketType: 1, SeqNum: 1, AckNum: 7169, WindowSize: 5
+Sent: PacketType: 1, SeqNum: 1, AckNum: 8193, WindowSize: 5
+Sent: PacketType: 1, SeqNum: 1, AckNum: 9217, WindowSize: 5
+Sent: PacketType: 1, SeqNum: 1, AckNum: 10241, WindowSize: 5
+Sent: PacketType: 1, SeqNum: 1, AckNum: 11265, WindowSize: 5
+Sent: PacketType: 1, SeqNum: 1, AckNum: 12289, WindowSize: 5
+Received: PacketType: 2, SeqNum: 12289, AckNum: 2, WindowSize: 7
+Received: PacketType: 2, SeqNum: 13313, AckNum: 2, WindowSize: 7
+Received: PacketType: 2, SeqNum: 14337, AckNum: 2, WindowSize: 7
+Received: PacketType: 2, SeqNum: 15361, AckNum: 2, WindowSize: 7
+Received: PacketType: 2, SeqNum: 16385, AckNum: 2, WindowSize: 7
+Received: PacketType: 2, SeqNum: 17409, AckNum: 2, WindowSize: 7
+Received: PacketType: 2, SeqNum: 18433, AckNum: 2, WindowSize: 7
+Sent: PacketType: 1, SeqNum: 1, AckNum: 13313, WindowSize: 5
+Sent: PacketType: 1, SeqNum: 1, AckNum: 14337, WindowSize: 5
+Sent: PacketType: 1, SeqNum: 1, AckNum: 15361, WindowSize: 5
+Sent: PacketType: 1, SeqNum: 1, AckNum: 16385, WindowSize: 5
+Sent: PacketType: 1, SeqNum: 1, AckNum: 17409, WindowSize: 5
+Sent: PacketType: 1, SeqNum: 1, AckNum: 18433, WindowSize: 5
+Sent: PacketType: 1, SeqNum: 1, AckNum: 19457, WindowSize: 5
+Sending Ack Again
+Sent: PacketType: 1, SeqNum: 1, AckNum: 16385, WindowSize: 5
+Received: PacketType: 2, SeqNum: 19457, AckNum: 2, WindowSize: 3
+Received: PacketType: 2, SeqNum: 20481, AckNum: 2, WindowSize: 3
+Received: PacketType: 2, SeqNum: 21505, AckNum: 2, WindowSize: 3
+Sent: PacketType: 1, SeqNum: 1, AckNum: 20481, WindowSize: 5
+Sent: PacketType: 1, SeqNum: 1, AckNum: 21505, WindowSize: 5
+Sent: PacketType: 1, SeqNum: 1, AckNum: 22529, WindowSize: 5
+Received: PacketType: 2, SeqNum: 22529, AckNum: 2, WindowSize: 4
+Received: PacketType: 2, SeqNum: 23553, AckNum: 2, WindowSize: 4
+Received: PacketType: 2, SeqNum: 24577, AckNum: 2, WindowSize: 4
+Received: PacketType: 2, SeqNum: 25601, AckNum: 2, WindowSize: 4
+Sent: PacketType: 1, SeqNum: 1, AckNum: 23553, WindowSize: 5
+Sent: PacketType: 1, SeqNum: 1, AckNum: 24577, WindowSize: 5
+Sent: PacketType: 1, SeqNum: 1, AckNum: 25601, WindowSize: 5
+Sent: PacketType: 1, SeqNum: 1, AckNum: 26625, WindowSize: 5
+Received: PacketType: 2, SeqNum: 26625, AckNum: 2, WindowSize: 5
+Received: PacketType: 2, SeqNum: 27649, AckNum: 2, WindowSize: 5
+Received: PacketType: 2, SeqNum: 28673, AckNum: 2, WindowSize: 5
+Received: PacketType: 2, SeqNum: 29697, AckNum: 2, WindowSize: 5
+Received: PacketType: 2, SeqNum: 30721, AckNum: 2, WindowSize: 5
+Sent: PacketType: 1, SeqNum: 1, AckNum: 27649, WindowSize: 5
+Sent: PacketType: 1, SeqNum: 1, AckNum: 28673, WindowSize: 5
+Sent: PacketType: 1, SeqNum: 1, AckNum: 29697, WindowSize: 5
+Sent: PacketType: 1, SeqNum: 1, AckNum: 30721, WindowSize: 5
+Sent: PacketType: 1, SeqNum: 1, AckNum: 31745, WindowSize: 5
+Sending Ack Again
+Sent: PacketType: 1, SeqNum: 1, AckNum: 27649, WindowSize: 5
+Received: PacketType: 2, SeqNum: 31745, AckNum: 2, WindowSize: 2
+Received: PacketType: 2, SeqNum: 32769, AckNum: 2, WindowSize: 2
+Sent: PacketType: 1, SeqNum: 1, AckNum: 32769, WindowSize: 5
+Sent: PacketType: 1, SeqNum: 1, AckNum: 33793, WindowSize: 5
+Received: PacketType: 2, SeqNum: 33793, AckNum: 2, WindowSize: 3
+Received: PacketType: 2, SeqNum: 34817, AckNum: 2, WindowSize: 3
+Received: PacketType: 2, SeqNum: 35841, AckNum: 2, WindowSize: 3
+Sent: PacketType: 1, SeqNum: 1, AckNum: 34817, WindowSize: 5
+Sent: PacketType: 1, SeqNum: 1, AckNum: 35841, WindowSize: 5
+Sent: PacketType: 1, SeqNum: 1, AckNum: 36865, WindowSize: 5
+Received: PacketType: 2, SeqNum: 36865, AckNum: 2, WindowSize: 4
+Received: PacketType: 2, SeqNum: 37889, AckNum: 2, WindowSize: 4
+Received: PacketType: 2, SeqNum: 38913, AckNum: 2, WindowSize: 4
+Received: PacketType: 2, SeqNum: 39937, AckNum: 2, WindowSize: 4
+Sent: PacketType: 1, SeqNum: 1, AckNum: 37889, WindowSize: 5
+Sent: PacketType: 1, SeqNum: 1, AckNum: 38913, WindowSize: 5
+Sent: PacketType: 1, SeqNum: 1, AckNum: 39937, WindowSize: 5
+Sent: PacketType: 1, SeqNum: 1, AckNum: 40961, WindowSize: 5
+Received: PacketType: 2, SeqNum: 40961, AckNum: 2, WindowSize: 5
+Received: PacketType: 2, SeqNum: 41985, AckNum: 2, WindowSize: 5
+Received: PacketType: 2, SeqNum: 43009, AckNum: 2, WindowSize: 5
+Received: PacketType: 2, SeqNum: 44033, AckNum: 2, WindowSize: 5
+Received: PacketType: 2, SeqNum: 45057, AckNum: 2, WindowSize: 5
+Sent: PacketType: 1, SeqNum: 1, AckNum: 41985, WindowSize: 5
+Sent: PacketType: 1, SeqNum: 1, AckNum: 43009, WindowSize: 5
+Sent: PacketType: 1, SeqNum: 1, AckNum: 44033, WindowSize: 5
+Sent: PacketType: 1, SeqNum: 1, AckNum: 45057, WindowSize: 5
+Sent: PacketType: 1, SeqNum: 1, AckNum: 46081, WindowSize: 5
+Sending Ack Again
+Sent: PacketType: 1, SeqNum: 1, AckNum: 45057, WindowSize: 5
+Sending Ack Again
+Sent: PacketType: 1, SeqNum: 1, AckNum: 46081, WindowSize: 5
+Received: PacketType: 2, SeqNum: 46081, AckNum: 2, WindowSize: 2
+Received: PacketType: 2, SeqNum: 47105, AckNum: 2, WindowSize: 2
+Sent: PacketType: 1, SeqNum: 1, AckNum: 47105, WindowSize: 5
+Sent: PacketType: 1, SeqNum: 1, AckNum: 48129, WindowSize: 5
+Received: PacketType: 2, SeqNum: 48129, AckNum: 2, WindowSize: 3
+Received: PacketType: 2, SeqNum: 49153, AckNum: 2, WindowSize: 3
+Received: PacketType: 2, SeqNum: 50177, AckNum: 2, WindowSize: 3
+Sent: PacketType: 1, SeqNum: 1, AckNum: 49153, WindowSize: 5
+Sent: PacketType: 1, SeqNum: 1, AckNum: 50177, WindowSize: 5
+Sent: PacketType: 1, SeqNum: 1, AckNum: 51201, WindowSize: 5
+Sending Ack Again
+Sent: PacketType: 1, SeqNum: 1, AckNum: 50177, WindowSize: 5
+Received: PacketType: 2, SeqNum: 51201, AckNum: 2, WindowSize: 1
+Sent: PacketType: 1, SeqNum: 1, AckNum: 52225, WindowSize: 5
+Received: PacketType: 2, SeqNum: 52225, AckNum: 2, WindowSize: 2
+Received: PacketType: 2, SeqNum: 53249, AckNum: 2, WindowSize: 2
+Sent: PacketType: 1, SeqNum: 1, AckNum: 53249, WindowSize: 5
+Sent: PacketType: 1, SeqNum: 1, AckNum: 54273, WindowSize: 5
+Received: PacketType: 2, SeqNum: 54273, AckNum: 2, WindowSize: 3
+Received: PacketType: 2, SeqNum: 55297, AckNum: 2, WindowSize: 3
+Received: PacketType: 2, SeqNum: 56321, AckNum: 2, WindowSize: 3
+Sent: PacketType: 1, SeqNum: 1, AckNum: 55297, WindowSize: 5
+Sent: PacketType: 1, SeqNum: 1, AckNum: 56321, WindowSize: 5
+Sent: PacketType: 1, SeqNum: 1, AckNum: 57345, WindowSize: 5
+Received: PacketType: 2, SeqNum: 57345, AckNum: 2, WindowSize: 4
+Received: PacketType: 2, SeqNum: 58369, AckNum: 2, WindowSize: 4
+Received: PacketType: 2, SeqNum: 59393, AckNum: 2, WindowSize: 4
+Received: PacketType: 2, SeqNum: 60417, AckNum: 2, WindowSize: 4
+Sent: PacketType: 1, SeqNum: 1, AckNum: 58369, WindowSize: 5
+Sent: PacketType: 1, SeqNum: 1, AckNum: 59393, WindowSize: 5
+Sent: PacketType: 1, SeqNum: 1, AckNum: 60417, WindowSize: 5
+Sent: PacketType: 1, SeqNum: 1, AckNum: 61441, WindowSize: 5
+Received: PacketType: 2, SeqNum: 61441, AckNum: 2, WindowSize: 5
+Received: PacketType: 2, SeqNum: 62465, AckNum: 2, WindowSize: 5
+Received: PacketType: 2, SeqNum: 63489, AckNum: 2, WindowSize: 5
+Received: PacketType: 2, SeqNum: 64513, AckNum: 2, WindowSize: 5
+Received: PacketType: 2, SeqNum: 65537, AckNum: 2, WindowSize: 5
+Sent: PacketType: 1, SeqNum: 1, AckNum: 62465, WindowSize: 5
+Sent: PacketType: 1, SeqNum: 1, AckNum: 63489, WindowSize: 5
+Sent: PacketType: 1, SeqNum: 1, AckNum: 64513, WindowSize: 5
+Sent: PacketType: 1, SeqNum: 1, AckNum: 65537, WindowSize: 5
+Sent: PacketType: 1, SeqNum: 1, AckNum: 66561, WindowSize: 5
+Sending Ack Again
+Sent: PacketType: 1, SeqNum: 1, AckNum: 64513, WindowSize: 5
+Received: PacketType: 2, SeqNum: 66561, AckNum: 2, WindowSize: 2
+Received: PacketType: 2, SeqNum: 67585, AckNum: 2, WindowSize: 2
+Sent: PacketType: 1, SeqNum: 1, AckNum: 67585, WindowSize: 5
+Sent: PacketType: 1, SeqNum: 1, AckNum: 68609, WindowSize: 5
+Received: PacketType: 2, SeqNum: 68609, AckNum: 2, WindowSize: 3
+Received: PacketType: 2, SeqNum: 69633, AckNum: 2, WindowSize: 3
+Received: PacketType: 2, SeqNum: 70657, AckNum: 2, WindowSize: 3
+Sent: PacketType: 1, SeqNum: 1, AckNum: 69633, WindowSize: 5
+Sent: PacketType: 1, SeqNum: 1, AckNum: 70657, WindowSize: 5
+Sent: PacketType: 1, SeqNum: 1, AckNum: 71681, WindowSize: 5
+Received: PacketType: 2, SeqNum: 71681, AckNum: 2, WindowSize: 4
+Received: PacketType: 2, SeqNum: 72705, AckNum: 2, WindowSize: 4
+Received: PacketType: 2, SeqNum: 73729, AckNum: 2, WindowSize: 4
+Received: PacketType: 2, SeqNum: 74753, AckNum: 2, WindowSize: 4
+Sent: PacketType: 1, SeqNum: 1, AckNum: 72705, WindowSize: 5
+Sent: PacketType: 1, SeqNum: 1, AckNum: 73729, WindowSize: 5
+Sent: PacketType: 1, SeqNum: 1, AckNum: 74753, WindowSize: 5
+Sent: PacketType: 1, SeqNum: 1, AckNum: 75777, WindowSize: 5
+Sending Ack Again
+Sent: PacketType: 1, SeqNum: 1, AckNum: 73729, WindowSize: 5
+Received: PacketType: 2, SeqNum: 75777, AckNum: 2, WindowSize: 2
+Received: PacketType: 2, SeqNum: 76801, AckNum: 2, WindowSize: 2
+Sent: PacketType: 1, SeqNum: 1, AckNum: 76801, WindowSize: 5
+Sent: PacketType: 1, SeqNum: 1, AckNum: 77825, WindowSize: 5
+Sending Ack Again
+Sent: PacketType: 1, SeqNum: 1, AckNum: 76801, WindowSize: 5
+Received: PacketType: 2, SeqNum: 77825, AckNum: 2, WindowSize: 1
+Sent: PacketType: 1, SeqNum: 1, AckNum: 78849, WindowSize: 5
+Sending Ack Again
+Sent: PacketType: 1, SeqNum: 1, AckNum: 79873, WindowSize: 5
+Sending Ack Again
+Sent: PacketType: 1, SeqNum: 1, AckNum: 80897, WindowSize: 5
+Sending Ack Again
+Sent: PacketType: 1, SeqNum: 1, AckNum: 79873, WindowSize: 5
+Sending Ack Again
+Sent: PacketType: 1, SeqNum: 1, AckNum: 80897, WindowSize: 5
+Received: PacketType: 2, SeqNum: 80897, AckNum: 2, WindowSize: 1
+Sent: PacketType: 1, SeqNum: 1, AckNum: 81921, WindowSize: 5
+Sending Ack Again
+Sent: PacketType: 1, SeqNum: 1, AckNum: 82945, WindowSize: 5
+Sending Ack Again
+Sent: PacketType: 1, SeqNum: 1, AckNum: 83969, WindowSize: 5
+Received: PacketType: 2, SeqNum: 83969, AckNum: 2, WindowSize: 3
+Received: PacketType: 2, SeqNum: 84993, AckNum: 2, WindowSize: 3
+Received: PacketType: 2, SeqNum: 86017, AckNum: 2, WindowSize: 3
+Sent: PacketType: 1, SeqNum: 1, AckNum: 84993, WindowSize: 5
+Sent: PacketType: 1, SeqNum: 1, AckNum: 86017, WindowSize: 5
+Sent: PacketType: 1, SeqNum: 1, AckNum: 87041, WindowSize: 5
+Sending Ack Again
+Sent: PacketType: 1, SeqNum: 1, AckNum: 84993, WindowSize: 5
+Received: PacketType: 2, SeqNum: 87041, AckNum: 2, WindowSize: 1
+Sent: PacketType: 1, SeqNum: 1, AckNum: 88065, WindowSize: 5
+Received: PacketType: 2, SeqNum: 87041, AckNum: 2, WindowSize: 1
+Sent: PacketType: 1, SeqNum: 1, AckNum: 88065, WindowSize: 5
+Received: PacketType: 2, SeqNum: 88065, AckNum: 2, WindowSize: 1
+Sent: PacketType: 1, SeqNum: 1, AckNum: 89089, WindowSize: 5
+Received: PacketType: 2, SeqNum: 89089, AckNum: 2, WindowSize: 2
+Received: PacketType: 2, SeqNum: 90113, AckNum: 2, WindowSize: 2
+Sent: PacketType: 1, SeqNum: 1, AckNum: 90113, WindowSize: 5
+Sent: PacketType: 1, SeqNum: 1, AckNum: 91137, WindowSize: 5
+Received: PacketType: 2, SeqNum: 91137, AckNum: 2, WindowSize: 3
+Received: PacketType: 2, SeqNum: 92161, AckNum: 2, WindowSize: 3
+Received: PacketType: 2, SeqNum: 93185, AckNum: 2, WindowSize: 3
+Sent: PacketType: 1, SeqNum: 1, AckNum: 92161, WindowSize: 5
+Sent: PacketType: 1, SeqNum: 1, AckNum: 93185, WindowSize: 5
+Sent: PacketType: 1, SeqNum: 1, AckNum: 94209, WindowSize: 5
+Received: PacketType: 2, SeqNum: 94209, AckNum: 2, WindowSize: 4
+Received: PacketType: 2, SeqNum: 95233, AckNum: 2, WindowSize: 4
+Received: PacketType: 2, SeqNum: 96257, AckNum: 2, WindowSize: 4
+Received: PacketType: 2, SeqNum: 97281, AckNum: 2, WindowSize: 4
+Sent: PacketType: 1, SeqNum: 1, AckNum: 95233, WindowSize: 5
+Sent: PacketType: 1, SeqNum: 1, AckNum: 96257, WindowSize: 5
+Sent: PacketType: 1, SeqNum: 1, AckNum: 97281, WindowSize: 5
+Sent: PacketType: 1, SeqNum: 1, AckNum: 98305, WindowSize: 5
+Sending Ack Again
+Sent: PacketType: 1, SeqNum: 1, AckNum: 95233, WindowSize: 5
+Sending Ack Again
+Sent: PacketType: 1, SeqNum: 1, AckNum: 96257, WindowSize: 5
+Sending Ack Again
+Sent: PacketType: 1, SeqNum: 1, AckNum: 97281, WindowSize: 5
+Sending Ack Again
+Sent: PacketType: 1, SeqNum: 1, AckNum: 98305, WindowSize: 5
+Received: PacketType: 2, SeqNum: 98305, AckNum: 2, WindowSize: 2
+Received: PacketType: 2, SeqNum: 99329, AckNum: 2, WindowSize: 2
+Sent: PacketType: 1, SeqNum: 1, AckNum: 99329, WindowSize: 5
+Sent: PacketType: 1, SeqNum: 1, AckNum: 100353, WindowSize: 5
+Received: PacketType: 2, SeqNum: 100353, AckNum: 2, WindowSize: 3
+Received: PacketType: 2, SeqNum: 101377, AckNum: 2, WindowSize: 3
+Received: PacketType: 2, SeqNum: 102401, AckNum: 2, WindowSize: 3
+Sent: PacketType: 1, SeqNum: 1, AckNum: 101377, WindowSize: 5
+Sent: PacketType: 1, SeqNum: 1, AckNum: 102401, WindowSize: 5
+Sent: PacketType: 1, SeqNum: 1, AckNum: 103425, WindowSize: 5
+Sending Ack Again
+Sent: PacketType: 1, SeqNum: 1, AckNum: 103425, WindowSize: 5
+Received: PacketType: 2, SeqNum: 103425, AckNum: 2, WindowSize: 1
+Sent: PacketType: 1, SeqNum: 1, AckNum: 104449, WindowSize: 5
+Received: PacketType: 2, SeqNum: 103425, AckNum: 2, WindowSize: 1
+Sent: PacketType: 1, SeqNum: 1, AckNum: 104449, WindowSize: 5
+Received: PacketType: 2, SeqNum: 104449, AckNum: 2, WindowSize: 1
+Sent: PacketType: 1, SeqNum: 1, AckNum: 105473, WindowSize: 5
+Received: PacketType: 2, SeqNum: 105473, AckNum: 2, WindowSize: 2
+Received: PacketType: 2, SeqNum: 106497, AckNum: 2, WindowSize: 2
+Sent: PacketType: 1, SeqNum: 1, AckNum: 106497, WindowSize: 5
+Sent: PacketType: 1, SeqNum: 1, AckNum: 107521, WindowSize: 5
+Sending Ack Again
+Sent: PacketType: 1, SeqNum: 1, AckNum: 107521, WindowSize: 5
+Received: PacketType: 2, SeqNum: 107521, AckNum: 2, WindowSize: 1
+Sent: PacketType: 1, SeqNum: 1, AckNum: 108545, WindowSize: 5
+Sending Ack Again
+Sent: PacketType: 1, SeqNum: 1, AckNum: 109569, WindowSize: 5
+Sending Ack Again
+Sent: PacketType: 1, SeqNum: 1, AckNum: 110593, WindowSize: 5
+Sending Ack Again
+Sent: PacketType: 1, SeqNum: 1, AckNum: 110593, WindowSize: 5
+Received: PacketType: 2, SeqNum: 110593, AckNum: 2, WindowSize: 1
+Sent: PacketType: 1, SeqNum: 1, AckNum: 111617, WindowSize: 5
+Sending Ack Again
+Sent: PacketType: 1, SeqNum: 1, AckNum: 112641, WindowSize: 5
+Sending Ack Again
+Sent: PacketType: 1, SeqNum: 1, AckNum: 113665, WindowSize: 5
+Sending Ack Again
+Sent: PacketType: 1, SeqNum: 1, AckNum: 113665, WindowSize: 5
+Received: PacketType: 2, SeqNum: 113665, AckNum: 2, WindowSize: 1
+Sent: PacketType: 1, SeqNum: 1, AckNum: 114689, WindowSize: 5
+Sending Ack Again
+Sent: PacketType: 1, SeqNum: 1, AckNum: 115713, WindowSize: 5
+Sending Ack Again
+Sent: PacketType: 1, SeqNum: 1, AckNum: 116737, WindowSize: 5
+Received: PacketType: 2, SeqNum: 116737, AckNum: 2, WindowSize: 3
+Received: PacketType: 2, SeqNum: 117761, AckNum: 2, WindowSize: 3
+Received: PacketType: 2, SeqNum: 118785, AckNum: 2, WindowSize: 3
+Sent: PacketType: 1, SeqNum: 1, AckNum: 117761, WindowSize: 5
+Sent: PacketType: 1, SeqNum: 1, AckNum: 118785, WindowSize: 5
+Sent: PacketType: 1, SeqNum: 1, AckNum: 119809, WindowSize: 5
+Sending Ack Again
+Sent: PacketType: 1, SeqNum: 1, AckNum: 118785, WindowSize: 5
+Received: PacketType: 2, SeqNum: 119809, AckNum: 2, WindowSize: 1
+Sent: PacketType: 1, SeqNum: 1, AckNum: 120833, WindowSize: 5
+Received: PacketType: 2, SeqNum: 120833, AckNum: 2, WindowSize: 2
+Received: PacketType: 2, SeqNum: 121857, AckNum: 2, WindowSize: 2
+Sent: PacketType: 1, SeqNum: 1, AckNum: 121857, WindowSize: 5
+Sent: PacketType: 1, SeqNum: 1, AckNum: 122881, WindowSize: 5
+Received: PacketType: 2, SeqNum: 122881, AckNum: 2, WindowSize: 3
+Received: PacketType: 2, SeqNum: 123905, AckNum: 2, WindowSize: 3
+Received: PacketType: 2, SeqNum: 124929, AckNum: 2, WindowSize: 3
+Sent: PacketType: 1, SeqNum: 1, AckNum: 123905, WindowSize: 5
+Sent: PacketType: 1, SeqNum: 1, AckNum: 124929, WindowSize: 5
+Sent: PacketType: 1, SeqNum: 1, AckNum: 125953, WindowSize: 5
+Received: PacketType: 2, SeqNum: 125953, AckNum: 2, WindowSize: 4
+Received: PacketType: 2, SeqNum: 126977, AckNum: 2, WindowSize: 4
+Received: PacketType: 2, SeqNum: 128001, AckNum: 2, WindowSize: 4
+Received: PacketType: 2, SeqNum: 129025, AckNum: 2, WindowSize: 4
+Sent: PacketType: 1, SeqNum: 1, AckNum: 126977, WindowSize: 5
+Sent: PacketType: 1, SeqNum: 1, AckNum: 128001, WindowSize: 5
+Sent: PacketType: 1, SeqNum: 1, AckNum: 129025, WindowSize: 5
+Sent: PacketType: 1, SeqNum: 1, AckNum: 130049, WindowSize: 5
+Received: PacketType: 2, SeqNum: 130049, AckNum: 2, WindowSize: 5
+Received: PacketType: 2, SeqNum: 131073, AckNum: 2, WindowSize: 5
+Received: PacketType: 2, SeqNum: 132097, AckNum: 2, WindowSize: 5
+Received: PacketType: 2, SeqNum: 133121, AckNum: 2, WindowSize: 5
+Received: PacketType: 2, SeqNum: 134145, AckNum: 2, WindowSize: 5
+Sent: PacketType: 1, SeqNum: 1, AckNum: 131073, WindowSize: 5
+Sent: PacketType: 1, SeqNum: 1, AckNum: 132097, WindowSize: 5
+Sent: PacketType: 1, SeqNum: 1, AckNum: 133121, WindowSize: 5
+Sent: PacketType: 1, SeqNum: 1, AckNum: 134145, WindowSize: 5
+Sent: PacketType: 1, SeqNum: 1, AckNum: 135169, WindowSize: 5
+Sending Ack Again
+Sent: PacketType: 1, SeqNum: 1, AckNum: 134145, WindowSize: 5
+Received: PacketType: 2, SeqNum: 135169, AckNum: 2, WindowSize: 2
+Received: PacketType: 2, SeqNum: 136193, AckNum: 2, WindowSize: 2
+Sent: PacketType: 1, SeqNum: 1, AckNum: 136193, WindowSize: 5
+Sent: PacketType: 1, SeqNum: 1, AckNum: 137217, WindowSize: 5
+Sending Ack Again
+Sent: PacketType: 1, SeqNum: 1, AckNum: 137217, WindowSize: 5
+Received: PacketType: 2, SeqNum: 137217, AckNum: 2, WindowSize: 1
+Sent: PacketType: 1, SeqNum: 1, AckNum: 138241, WindowSize: 5
+Received: PacketType: 2, SeqNum: 137217, AckNum: 2, WindowSize: 1
+Sent: PacketType: 1, SeqNum: 1, AckNum: 138241, WindowSize: 5
+Received: PacketType: 2, SeqNum: 138241, AckNum: 2, WindowSize: 1
+Sent: PacketType: 1, SeqNum: 1, AckNum: 139265, WindowSize: 5
+Sending Ack Again
+Sent: PacketType: 1, SeqNum: 1, AckNum: 140289, WindowSize: 5
+Sending Ack Again
+Sent: PacketType: 1, SeqNum: 1, AckNum: 141313, WindowSize: 5
+Received: PacketType: 2, SeqNum: 141313, AckNum: 2, WindowSize: 3
+Received: PacketType: 2, SeqNum: 142337, AckNum: 2, WindowSize: 3
+Received: PacketType: 2, SeqNum: 143361, AckNum: 2, WindowSize: 3
+Sent: PacketType: 1, SeqNum: 1, AckNum: 142337, WindowSize: 5
+Sent: PacketType: 1, SeqNum: 1, AckNum: 143361, WindowSize: 5
+Sent: PacketType: 1, SeqNum: 1, AckNum: 144385, WindowSize: 5
+Sending Ack Again
+Sent: PacketType: 1, SeqNum: 1, AckNum: 143361, WindowSize: 5
+Received: PacketType: 2, SeqNum: 144385, AckNum: 2, WindowSize: 1
+Sent: PacketType: 1, SeqNum: 1, AckNum: 145409, WindowSize: 5
+Received: PacketType: 2, SeqNum: 144385, AckNum: 2, WindowSize: 1
+Sent: PacketType: 1, SeqNum: 1, AckNum: 145409, WindowSize: 5
+Received: PacketType: 2, SeqNum: 145409, AckNum: 2, WindowSize: 1
+Sent: PacketType: 1, SeqNum: 1, AckNum: 146433, WindowSize: 5
+Received: PacketType: 2, SeqNum: 146433, AckNum: 2, WindowSize: 2
+Received: PacketType: 2, SeqNum: 147457, AckNum: 2, WindowSize: 2
+Sent: PacketType: 1, SeqNum: 1, AckNum: 147457, WindowSize: 5
+Sent: PacketType: 1, SeqNum: 1, AckNum: 148481, WindowSize: 5
+Received: PacketType: 2, SeqNum: 148481, AckNum: 2, WindowSize: 3
+Received: PacketType: 2, SeqNum: 149505, AckNum: 2, WindowSize: 3
+Received: PacketType: 2, SeqNum: 150529, AckNum: 2, WindowSize: 3
+Sent: PacketType: 1, SeqNum: 1, AckNum: 149505, WindowSize: 5
+Sent: PacketType: 1, SeqNum: 1, AckNum: 150529, WindowSize: 5
+Sent: PacketType: 1, SeqNum: 1, AckNum: 151553, WindowSize: 5
+Received: PacketType: 2, SeqNum: 151553, AckNum: 2, WindowSize: 4
+Received: PacketType: 2, SeqNum: 152577, AckNum: 2, WindowSize: 4
+Received: PacketType: 2, SeqNum: 153601, AckNum: 2, WindowSize: 4
+Received: PacketType: 2, SeqNum: 154625, AckNum: 2, WindowSize: 4
+Sent: PacketType: 1, SeqNum: 1, AckNum: 152577, WindowSize: 5
+Sent: PacketType: 1, SeqNum: 1, AckNum: 153601, WindowSize: 5
+Sent: PacketType: 1, SeqNum: 1, AckNum: 154625, WindowSize: 5
+Sent: PacketType: 1, SeqNum: 1, AckNum: 155649, WindowSize: 5
+Sending Ack Again
+Sent: PacketType: 1, SeqNum: 1, AckNum: 154625, WindowSize: 5
+Received: PacketType: 2, SeqNum: 155649, AckNum: 2, WindowSize: 2
+Received: PacketType: 2, SeqNum: 156673, AckNum: 2, WindowSize: 2
+Sent: PacketType: 1, SeqNum: 1, AckNum: 156673, WindowSize: 5
+Sent: PacketType: 1, SeqNum: 1, AckNum: 157697, WindowSize: 5
+Received: PacketType: 2, SeqNum: 157697, AckNum: 2, WindowSize: 3
+Received: PacketType: 2, SeqNum: 158721, AckNum: 2, WindowSize: 3
+Received: PacketType: 2, SeqNum: 159745, AckNum: 2, WindowSize: 3
+Sent: PacketType: 1, SeqNum: 1, AckNum: 158721, WindowSize: 5
+Sent: PacketType: 1, SeqNum: 1, AckNum: 159745, WindowSize: 5
+Sent: PacketType: 1, SeqNum: 1, AckNum: 160769, WindowSize: 5
+Sending Ack Again
+Sent: PacketType: 1, SeqNum: 1, AckNum: 158721, WindowSize: 5
+Received: PacketType: 2, SeqNum: 160769, AckNum: 2, WindowSize: 1
+Sent: PacketType: 1, SeqNum: 1, AckNum: 161793, WindowSize: 5
+Received: PacketType: 2, SeqNum: 161793, AckNum: 2, WindowSize: 2
+Received: PacketType: 2, SeqNum: 162817, AckNum: 2, WindowSize: 2
+Sent: PacketType: 1, SeqNum: 1, AckNum: 162817, WindowSize: 5
+Sent: PacketType: 1, SeqNum: 1, AckNum: 163841, WindowSize: 5
+Received: PacketType: 2, SeqNum: 163841, AckNum: 2, WindowSize: 3
+Received: PacketType: 2, SeqNum: 164865, AckNum: 2, WindowSize: 3
+Received: PacketType: 2, SeqNum: 165889, AckNum: 2, WindowSize: 3
+Sent: PacketType: 1, SeqNum: 1, AckNum: 164865, WindowSize: 5
+Sent: PacketType: 1, SeqNum: 1, AckNum: 165889, WindowSize: 5
+Sent: PacketType: 1, SeqNum: 1, AckNum: 166913, WindowSize: 5
+Received: PacketType: 2, SeqNum: 166913, AckNum: 2, WindowSize: 4
+Received: PacketType: 2, SeqNum: 167937, AckNum: 2, WindowSize: 4
+Received: PacketType: 2, SeqNum: 168961, AckNum: 2, WindowSize: 4
+Received: PacketType: 2, SeqNum: 169985, AckNum: 2, WindowSize: 4
+Sent: PacketType: 1, SeqNum: 1, AckNum: 167937, WindowSize: 5
+Sent: PacketType: 1, SeqNum: 1, AckNum: 168961, WindowSize: 5
+Sent: PacketType: 1, SeqNum: 1, AckNum: 169985, WindowSize: 5
+Sent: PacketType: 1, SeqNum: 1, AckNum: 171009, WindowSize: 5
+Sending Ack Again
+Sent: PacketType: 1, SeqNum: 1, AckNum: 167937, WindowSize: 5
+Sending Ack Again
+Sent: PacketType: 1, SeqNum: 1, AckNum: 168961, WindowSize: 5
+Sending Ack Again
+Sent: PacketType: 1, SeqNum: 1, AckNum: 171009, WindowSize: 5
+Received: PacketType: 2, SeqNum: 171009, AckNum: 2, WindowSize: 2
+Received: PacketType: 2, SeqNum: 172033, AckNum: 2, WindowSize: 2
+Sent: PacketType: 1, SeqNum: 1, AckNum: 172033, WindowSize: 5
+Sent: PacketType: 1, SeqNum: 1, AckNum: 173057, WindowSize: 5
+Received: PacketType: 2, SeqNum: 173057, AckNum: 2, WindowSize: 3
+Received: PacketType: 2, SeqNum: 174081, AckNum: 2, WindowSize: 3
+Received: PacketType: 2, SeqNum: 175105, AckNum: 2, WindowSize: 3
+Sent: PacketType: 1, SeqNum: 1, AckNum: 174081, WindowSize: 5
+Sent: PacketType: 1, SeqNum: 1, AckNum: 175105, WindowSize: 5
+Sent: PacketType: 1, SeqNum: 1, AckNum: 176129, WindowSize: 5
+Received: PacketType: 2, SeqNum: 176129, AckNum: 2, WindowSize: 4
+Received: PacketType: 2, SeqNum: 177153, AckNum: 2, WindowSize: 4
+Received: PacketType: 2, SeqNum: 178177, AckNum: 2, WindowSize: 4
+Received: PacketType: 2, SeqNum: 179201, AckNum: 2, WindowSize: 4
+Sent: PacketType: 1, SeqNum: 1, AckNum: 177153, WindowSize: 5
+Sent: PacketType: 1, SeqNum: 1, AckNum: 178177, WindowSize: 5
+Sent: PacketType: 1, SeqNum: 1, AckNum: 179201, WindowSize: 5
+Sent: PacketType: 1, SeqNum: 1, AckNum: 180225, WindowSize: 5
+Received: PacketType: 2, SeqNum: 180225, AckNum: 2, WindowSize: 5
+Received: PacketType: 2, SeqNum: 181249, AckNum: 2, WindowSize: 5
+Received: PacketType: 2, SeqNum: 182273, AckNum: 2, WindowSize: 5
+Received: PacketType: 2, SeqNum: 183297, AckNum: 2, WindowSize: 5
+Received: PacketType: 2, SeqNum: 184321, AckNum: 2, WindowSize: 5
+Sent: PacketType: 1, SeqNum: 1, AckNum: 181249, WindowSize: 5
+Sent: PacketType: 1, SeqNum: 1, AckNum: 182273, WindowSize: 5
+Sent: PacketType: 1, SeqNum: 1, AckNum: 183297, WindowSize: 5
+Sent: PacketType: 1, SeqNum: 1, AckNum: 184321, WindowSize: 5
+Sent: PacketType: 1, SeqNum: 1, AckNum: 185345, WindowSize: 5
+Received: PacketType: 2, SeqNum: 185345, AckNum: 2, WindowSize: 6
+Received: PacketType: 2, SeqNum: 186369, AckNum: 2, WindowSize: 6
+Received: PacketType: 2, SeqNum: 187393, AckNum: 2, WindowSize: 6
+Received: PacketType: 2, SeqNum: 188417, AckNum: 2, WindowSize: 6
+Received: PacketType: 2, SeqNum: 189441, AckNum: 2, WindowSize: 6
+Received: PacketType: 2, SeqNum: 190465, AckNum: 2, WindowSize: 6
+Sent: PacketType: 1, SeqNum: 1, AckNum: 186369, WindowSize: 5
+Sent: PacketType: 1, SeqNum: 1, AckNum: 187393, WindowSize: 5
+Sent: PacketType: 1, SeqNum: 1, AckNum: 188417, WindowSize: 5
+Sent: PacketType: 1, SeqNum: 1, AckNum: 189441, WindowSize: 5
+Sent: PacketType: 1, SeqNum: 1, AckNum: 190465, WindowSize: 5
+Sent: PacketType: 1, SeqNum: 1, AckNum: 191489, WindowSize: 5
+Sending Ack Again
+Sent: PacketType: 1, SeqNum: 1, AckNum: 189441, WindowSize: 5
+Received: PacketType: 2, SeqNum: 191489, AckNum: 2, WindowSize: 3
+Received: PacketType: 2, SeqNum: 192513, AckNum: 2, WindowSize: 3
+Received: PacketType: 2, SeqNum: 193537, AckNum: 2, WindowSize: 3
+Sent: PacketType: 1, SeqNum: 1, AckNum: 192513, WindowSize: 5
+Sent: PacketType: 1, SeqNum: 1, AckNum: 193537, WindowSize: 5
+Sent: PacketType: 1, SeqNum: 1, AckNum: 194561, WindowSize: 5
+Sending Ack Again
+Sent: PacketType: 1, SeqNum: 1, AckNum: 194561, WindowSize: 5
+Received: PacketType: 2, SeqNum: 194561, AckNum: 2, WindowSize: 1
+Sent: PacketType: 1, SeqNum: 1, AckNum: 195585, WindowSize: 5
+Received: PacketType: 2, SeqNum: 195585, AckNum: 2, WindowSize: 2
+Received: PacketType: 2, SeqNum: 196609, AckNum: 2, WindowSize: 2
+Sent: PacketType: 1, SeqNum: 1, AckNum: 196609, WindowSize: 5
+Sent: PacketType: 1, SeqNum: 1, AckNum: 197633, WindowSize: 5
+Received: PacketType: 2, SeqNum: 197633, AckNum: 2, WindowSize: 3
+Received: PacketType: 2, SeqNum: 198657, AckNum: 2, WindowSize: 3
+Received: PacketType: 2, SeqNum: 199681, AckNum: 2, WindowSize: 3
+Sent: PacketType: 1, SeqNum: 1, AckNum: 198657, WindowSize: 5
+Sent: PacketType: 1, SeqNum: 1, AckNum: 199681, WindowSize: 5
+Sent: PacketType: 1, SeqNum: 1, AckNum: 200705, WindowSize: 5
+Sending Ack Again
+Sent: PacketType: 1, SeqNum: 1, AckNum: 199681, WindowSize: 5
+Sending Ack Again
+Sent: PacketType: 1, SeqNum: 1, AckNum: 200705, WindowSize: 5
+Received: PacketType: 2, SeqNum: 200705, AckNum: 2, WindowSize: 1
+Sent: PacketType: 1, SeqNum: 1, AckNum: 201729, WindowSize: 5
+Received: PacketType: 2, SeqNum: 200705, AckNum: 2, WindowSize: 1
+Sent: PacketType: 1, SeqNum: 1, AckNum: 201729, WindowSize: 5
+Received: PacketType: 2, SeqNum: 201729, AckNum: 2, WindowSize: 1
+Sent: PacketType: 1, SeqNum: 1, AckNum: 202753, WindowSize: 5
+Received: PacketType: 2, SeqNum: 202753, AckNum: 2, WindowSize: 2
+Received: PacketType: 2, SeqNum: 203777, AckNum: 2, WindowSize: 2
+Sent: PacketType: 1, SeqNum: 1, AckNum: 203777, WindowSize: 5
+Sent: PacketType: 1, SeqNum: 1, AckNum: 204801, WindowSize: 5
+Received: PacketType: 2, SeqNum: 204801, AckNum: 2, WindowSize: 3
+Received: PacketType: 2, SeqNum: 205825, AckNum: 2, WindowSize: 3
+Received: PacketType: 2, SeqNum: 206849, AckNum: 2, WindowSize: 3
+Sent: PacketType: 1, SeqNum: 1, AckNum: 205825, WindowSize: 5
+Sent: PacketType: 1, SeqNum: 1, AckNum: 206849, WindowSize: 5
+Sent: PacketType: 1, SeqNum: 1, AckNum: 207873, WindowSize: 5
+Received: PacketType: 2, SeqNum: 207873, AckNum: 2, WindowSize: 4
+Received: PacketType: 2, SeqNum: 208897, AckNum: 2, WindowSize: 4
+Received: PacketType: 2, SeqNum: 209921, AckNum: 2, WindowSize: 4
+Received: PacketType: 2, SeqNum: 210945, AckNum: 2, WindowSize: 4
+Sent: PacketType: 1, SeqNum: 1, AckNum: 208897, WindowSize: 5
+Sent: PacketType: 1, SeqNum: 1, AckNum: 209921, WindowSize: 5
+Sent: PacketType: 1, SeqNum: 1, AckNum: 210945, WindowSize: 5
+Sent: PacketType: 1, SeqNum: 1, AckNum: 211969, WindowSize: 5
+Sending Ack Again
+Sent: PacketType: 1, SeqNum: 1, AckNum: 208897, WindowSize: 5
+Sending Ack Again
+Sent: PacketType: 1, SeqNum: 1, AckNum: 210945, WindowSize: 5
+Received: PacketType: 2, SeqNum: 211969, AckNum: 2, WindowSize: 2
+Received: PacketType: 2, SeqNum: 212993, AckNum: 2, WindowSize: 2
+Sent: PacketType: 1, SeqNum: 1, AckNum: 212993, WindowSize: 5
+Sent: PacketType: 1, SeqNum: 1, AckNum: 214017, WindowSize: 5
+Sending Ack Again
+Sent: PacketType: 1, SeqNum: 1, AckNum: 212993, WindowSize: 5
+Received: PacketType: 2, SeqNum: 214017, AckNum: 2, WindowSize: 1
+Sent: PacketType: 1, SeqNum: 1, AckNum: 215041, WindowSize: 5
+Sending Ack Again
+Sent: PacketType: 1, SeqNum: 1, AckNum: 216065, WindowSize: 5
+Sending Ack Again
+Sent: PacketType: 1, SeqNum: 1, AckNum: 217089, WindowSize: 5
+Received: PacketType: 2, SeqNum: 217089, AckNum: 2, WindowSize: 3
+Received: PacketType: 2, SeqNum: 218113, AckNum: 2, WindowSize: 3
+Received: PacketType: 2, SeqNum: 219137, AckNum: 2, WindowSize: 3
+Sent: PacketType: 1, SeqNum: 1, AckNum: 218113, WindowSize: 5
+Sent: PacketType: 1, SeqNum: 1, AckNum: 219137, WindowSize: 5
+Sent: PacketType: 1, SeqNum: 1, AckNum: 220161, WindowSize: 5
+Sending Ack Again
+Sent: PacketType: 1, SeqNum: 1, AckNum: 220161, WindowSize: 5
+Received: PacketType: 2, SeqNum: 220161, AckNum: 2, WindowSize: 1
+Sent: PacketType: 1, SeqNum: 1, AckNum: 221185, WindowSize: 5
+Received: PacketType: 2, SeqNum: 221185, AckNum: 2, WindowSize: 2
+Received: PacketType: 2, SeqNum: 222209, AckNum: 2, WindowSize: 2
+Sent: PacketType: 1, SeqNum: 1, AckNum: 222209, WindowSize: 5
+Sent: PacketType: 1, SeqNum: 1, AckNum: 223233, WindowSize: 5
+Received: PacketType: 2, SeqNum: 223233, AckNum: 2, WindowSize: 3
+Received: PacketType: 2, SeqNum: 224257, AckNum: 2, WindowSize: 3
+Received: PacketType: 2, SeqNum: 225281, AckNum: 2, WindowSize: 3
+Sent: PacketType: 1, SeqNum: 1, AckNum: 224257, WindowSize: 5
+Sent: PacketType: 1, SeqNum: 1, AckNum: 225281, WindowSize: 5
+Sent: PacketType: 1, SeqNum: 1, AckNum: 226305, WindowSize: 5
+Sending Ack Again
+Sent: PacketType: 1, SeqNum: 1, AckNum: 226305, WindowSize: 5
+Received: PacketType: 2, SeqNum: 226305, AckNum: 2, WindowSize: 1
+Sent: PacketType: 1, SeqNum: 1, AckNum: 227329, WindowSize: 5
+Received: PacketType: 2, SeqNum: 227329, AckNum: 2, WindowSize: 2
+Received: PacketType: 2, SeqNum: 228353, AckNum: 2, WindowSize: 2
+Sent: PacketType: 1, SeqNum: 1, AckNum: 228353, WindowSize: 5
+Sent: PacketType: 1, SeqNum: 1, AckNum: 229377, WindowSize: 5
+Sending Ack Again
+Sent: PacketType: 1, SeqNum: 1, AckNum: 229377, WindowSize: 5
+Received: PacketType: 2, SeqNum: 229377, AckNum: 2, WindowSize: 1
+Sent: PacketType: 1, SeqNum: 1, AckNum: 230401, WindowSize: 5
+Sending Ack Again
+Sent: PacketType: 1, SeqNum: 1, AckNum: 231425, WindowSize: 5
+Sending Ack Again
+Sent: PacketType: 1, SeqNum: 1, AckNum: 232449, WindowSize: 5
+Received: PacketType: 2, SeqNum: 232449, AckNum: 2, WindowSize: 3
+Received: PacketType: 2, SeqNum: 233473, AckNum: 2, WindowSize: 3
+Received: PacketType: 2, SeqNum: 234497, AckNum: 2, WindowSize: 3
+Sent: PacketType: 1, SeqNum: 1, AckNum: 233473, WindowSize: 5
+Sent: PacketType: 1, SeqNum: 1, AckNum: 234497, WindowSize: 5
+Sent: PacketType: 1, SeqNum: 1, AckNum: 235521, WindowSize: 5
+Received: PacketType: 2, SeqNum: 235521, AckNum: 2, WindowSize: 4
+Received: PacketType: 2, SeqNum: 236545, AckNum: 2, WindowSize: 4
+Received: PacketType: 2, SeqNum: 237569, AckNum: 2, WindowSize: 4
+Received: PacketType: 2, SeqNum: 238593, AckNum: 2, WindowSize: 4
+Sent: PacketType: 1, SeqNum: 1, AckNum: 236545, WindowSize: 5
+Sent: PacketType: 1, SeqNum: 1, AckNum: 237569, WindowSize: 5
+Sent: PacketType: 1, SeqNum: 1, AckNum: 238593, WindowSize: 5
+Sent: PacketType: 1, SeqNum: 1, AckNum: 239617, WindowSize: 5
+Sending Ack Again
+Sent: PacketType: 1, SeqNum: 1, AckNum: 237569, WindowSize: 5
+Received: PacketType: 2, SeqNum: 239617, AckNum: 2, WindowSize: 2
+Received: PacketType: 2, SeqNum: 240641, AckNum: 2, WindowSize: 2
+Sent: PacketType: 1, SeqNum: 1, AckNum: 240641, WindowSize: 5
+Sent: PacketType: 1, SeqNum: 1, AckNum: 241665, WindowSize: 5
+Sending Ack Again
+Sent: PacketType: 1, SeqNum: 1, AckNum: 240641, WindowSize: 5
+Received: PacketType: 2, SeqNum: 241665, AckNum: 2, WindowSize: 1
+Sent: PacketType: 1, SeqNum: 1, AckNum: 242689, WindowSize: 5
+Received: PacketType: 2, SeqNum: 241665, AckNum: 2, WindowSize: 1
+Sent: PacketType: 1, SeqNum: 1, AckNum: 242689, WindowSize: 5
+Received: PacketType: 2, SeqNum: 242689, AckNum: 2, WindowSize: 1
+Sent: PacketType: 1, SeqNum: 1, AckNum: 243713, WindowSize: 5
+Sending Ack Again
+Sent: PacketType: 1, SeqNum: 1, AckNum: 244737, WindowSize: 5
+Sending Ack Again
+Sent: PacketType: 1, SeqNum: 1, AckNum: 245761, WindowSize: 5
+Sending Ack Again
+Sent: PacketType: 1, SeqNum: 1, AckNum: 245761, WindowSize: 5
+Received: PacketType: 2, SeqNum: 245761, AckNum: 2, WindowSize: 1
+Sent: PacketType: 1, SeqNum: 1, AckNum: 246785, WindowSize: 5
+Sending Ack Again
+Sent: PacketType: 1, SeqNum: 1, AckNum: 247809, WindowSize: 5
+Sending Ack Again
+Sent: PacketType: 1, SeqNum: 1, AckNum: 248833, WindowSize: 5
+Received: PacketType: 2, SeqNum: 248833, AckNum: 2, WindowSize: 3
+Received: PacketType: 2, SeqNum: 249857, AckNum: 2, WindowSize: 3
+Received: PacketType: 2, SeqNum: 250881, AckNum: 2, WindowSize: 3
+Sent: PacketType: 1, SeqNum: 1, AckNum: 249857, WindowSize: 5
+Sent: PacketType: 1, SeqNum: 1, AckNum: 250881, WindowSize: 5
+Sent: PacketType: 1, SeqNum: 1, AckNum: 251905, WindowSize: 5
+Received: PacketType: 2, SeqNum: 251905, AckNum: 2, WindowSize: 4
+Received: PacketType: 2, SeqNum: 252929, AckNum: 2, WindowSize: 4
+Received: PacketType: 2, SeqNum: 253953, AckNum: 2, WindowSize: 4
+Received: PacketType: 2, SeqNum: 254977, AckNum: 2, WindowSize: 4
+Sent: PacketType: 1, SeqNum: 1, AckNum: 252929, WindowSize: 5
+Sent: PacketType: 1, SeqNum: 1, AckNum: 253953, WindowSize: 5
+Sent: PacketType: 1, SeqNum: 1, AckNum: 254977, WindowSize: 5
+Sent: PacketType: 1, SeqNum: 1, AckNum: 256001, WindowSize: 5
+Sending Ack Again
+Sent: PacketType: 1, SeqNum: 1, AckNum: 253953, WindowSize: 5
+Sending Ack Again
+Sent: PacketType: 1, SeqNum: 1, AckNum: 256001, WindowSize: 5
+Received: PacketType: 2, SeqNum: 256001, AckNum: 2, WindowSize: 2
+Received: PacketType: 2, SeqNum: 257025, AckNum: 2, WindowSize: 2
+Sent: PacketType: 1, SeqNum: 1, AckNum: 257025, WindowSize: 5
+Sent: PacketType: 1, SeqNum: 1, AckNum: 258049, WindowSize: 5
+Received: PacketType: 2, SeqNum: 258049, AckNum: 2, WindowSize: 3
+Received: PacketType: 2, SeqNum: 259073, AckNum: 2, WindowSize: 3
+Received: PacketType: 2, SeqNum: 260097, AckNum: 2, WindowSize: 3
+Sent: PacketType: 1, SeqNum: 1, AckNum: 259073, WindowSize: 5
+Sent: PacketType: 1, SeqNum: 1, AckNum: 260097, WindowSize: 5
+Sent: PacketType: 1, SeqNum: 1, AckNum: 261121, WindowSize: 5
+Sending Ack Again
+Sent: PacketType: 1, SeqNum: 1, AckNum: 261121, WindowSize: 5
+Received: PacketType: 2, SeqNum: 261121, AckNum: 2, WindowSize: 1
+Sent: PacketType: 1, SeqNum: 1, AckNum: 262145, WindowSize: 5
+Received: PacketType: 2, SeqNum: 261121, AckNum: 2, WindowSize: 1
+Sent: PacketType: 1, SeqNum: 1, AckNum: 262145, WindowSize: 5
+Received: PacketType: 2, SeqNum: 262145, AckNum: 2, WindowSize: 1
+Sent: PacketType: 1, SeqNum: 1, AckNum: 263169, WindowSize: 5
+Received: PacketType: 2, SeqNum: 263169, AckNum: 2, WindowSize: 2
+Received: PacketType: 2, SeqNum: 264193, AckNum: 2, WindowSize: 2
+Sent: PacketType: 1, SeqNum: 1, AckNum: 264193, WindowSize: 5
+Sent: PacketType: 1, SeqNum: 1, AckNum: 265217, WindowSize: 5
+Received: PacketType: 2, SeqNum: 265217, AckNum: 2, WindowSize: 3
+Received: PacketType: 2, SeqNum: 266241, AckNum: 2, WindowSize: 3
+Received: PacketType: 2, SeqNum: 267265, AckNum: 2, WindowSize: 3
+Sent: PacketType: 1, SeqNum: 1, AckNum: 266241, WindowSize: 5
+Sent: PacketType: 1, SeqNum: 1, AckNum: 267265, WindowSize: 5
+Sent: PacketType: 1, SeqNum: 1, AckNum: 268289, WindowSize: 5
+Received: PacketType: 2, SeqNum: 268289, AckNum: 2, WindowSize: 4
+Received: PacketType: 2, SeqNum: 269313, AckNum: 2, WindowSize: 4
+Received: PacketType: 2, SeqNum: 270337, AckNum: 2, WindowSize: 4
+Received: PacketType: 2, SeqNum: 271361, AckNum: 2, WindowSize: 4
+Sent: PacketType: 1, SeqNum: 1, AckNum: 269313, WindowSize: 5
+Sent: PacketType: 1, SeqNum: 1, AckNum: 270337, WindowSize: 5
+Sent: PacketType: 1, SeqNum: 1, AckNum: 271361, WindowSize: 5
+Sent: PacketType: 1, SeqNum: 1, AckNum: 272385, WindowSize: 5
+Received: PacketType: 2, SeqNum: 272385, AckNum: 2, WindowSize: 5
+Received: PacketType: 2, SeqNum: 273409, AckNum: 2, WindowSize: 5
+Received: PacketType: 2, SeqNum: 274433, AckNum: 2, WindowSize: 5
+Received: PacketType: 2, SeqNum: 275457, AckNum: 2, WindowSize: 5
+Received: PacketType: 2, SeqNum: 276481, AckNum: 2, WindowSize: 5
+Sent: PacketType: 1, SeqNum: 1, AckNum: 273409, WindowSize: 5
+Sent: PacketType: 1, SeqNum: 1, AckNum: 274433, WindowSize: 5
+Sent: PacketType: 1, SeqNum: 1, AckNum: 275457, WindowSize: 5
+Sent: PacketType: 1, SeqNum: 1, AckNum: 276481, WindowSize: 5
+Sent: PacketType: 1, SeqNum: 1, AckNum: 277505, WindowSize: 5
+Received: PacketType: 2, SeqNum: 277505, AckNum: 2, WindowSize: 6
+Received: PacketType: 2, SeqNum: 278529, AckNum: 2, WindowSize: 6
+Received: PacketType: 2, SeqNum: 279553, AckNum: 2, WindowSize: 6
+Received: PacketType: 2, SeqNum: 280577, AckNum: 2, WindowSize: 6
+Received: PacketType: 2, SeqNum: 281601, AckNum: 2, WindowSize: 6
+Received: PacketType: 2, SeqNum: 282625, AckNum: 2, WindowSize: 6
+Sent: PacketType: 1, SeqNum: 1, AckNum: 278529, WindowSize: 5
+Sent: PacketType: 1, SeqNum: 1, AckNum: 279553, WindowSize: 5
+Sent: PacketType: 1, SeqNum: 1, AckNum: 280577, WindowSize: 5
+Sent: PacketType: 1, SeqNum: 1, AckNum: 281601, WindowSize: 5
+Sent: PacketType: 1, SeqNum: 1, AckNum: 282625, WindowSize: 5
+Sent: PacketType: 1, SeqNum: 1, AckNum: 283649, WindowSize: 5
+Sending Ack Again
+Sent: PacketType: 1, SeqNum: 1, AckNum: 278529, WindowSize: 5
+Received: PacketType: 2, SeqNum: 283649, AckNum: 2, WindowSize: 3
+Received: PacketType: 2, SeqNum: 284673, AckNum: 2, WindowSize: 3
+Received: PacketType: 2, SeqNum: 285697, AckNum: 2, WindowSize: 3
+Sent: PacketType: 1, SeqNum: 1, AckNum: 284673, WindowSize: 5
+Sent: PacketType: 1, SeqNum: 1, AckNum: 285697, WindowSize: 5
+Sent: PacketType: 1, SeqNum: 1, AckNum: 286721, WindowSize: 5
+Received: PacketType: 2, SeqNum: 286721, AckNum: 2, WindowSize: 4
+Received: PacketType: 2, SeqNum: 287745, AckNum: 2, WindowSize: 4
+Received: PacketType: 2, SeqNum: 288769, AckNum: 2, WindowSize: 4
+Received: PacketType: 2, SeqNum: 289793, AckNum: 2, WindowSize: 4
+Sent: PacketType: 1, SeqNum: 1, AckNum: 287745, WindowSize: 5
+Sent: PacketType: 1, SeqNum: 1, AckNum: 288769, WindowSize: 5
+Sent: PacketType: 1, SeqNum: 1, AckNum: 289793, WindowSize: 5
+Sent: PacketType: 1, SeqNum: 1, AckNum: 290817, WindowSize: 5
+Sending Ack Again
+Sent: PacketType: 1, SeqNum: 1, AckNum: 287745, WindowSize: 5
+Received: PacketType: 2, SeqNum: 290817, AckNum: 2, WindowSize: 2
+Received: PacketType: 2, SeqNum: 291841, AckNum: 2, WindowSize: 2
+Sent: PacketType: 1, SeqNum: 1, AckNum: 291841, WindowSize: 5
+Sent: PacketType: 1, SeqNum: 1, AckNum: 292865, WindowSize: 5
+Received: PacketType: 2, SeqNum: 292865, AckNum: 2, WindowSize: 3
+Received: PacketType: 2, SeqNum: 293889, AckNum: 2, WindowSize: 3
+Received: PacketType: 2, SeqNum: 294913, AckNum: 2, WindowSize: 3
+Sent: PacketType: 1, SeqNum: 1, AckNum: 293889, WindowSize: 5
+Sent: PacketType: 1, SeqNum: 1, AckNum: 294913, WindowSize: 5
+Sent: PacketType: 1, SeqNum: 1, AckNum: 295937, WindowSize: 5
+Sending Ack Again
+Sent: PacketType: 1, SeqNum: 1, AckNum: 293889, WindowSize: 5
+Sending Ack Again
+Sent: PacketType: 1, SeqNum: 1, AckNum: 294913, WindowSize: 5
+Sending Ack Again
+Sent: PacketType: 1, SeqNum: 1, AckNum: 295937, WindowSize: 5
+Received: PacketType: 2, SeqNum: 295937, AckNum: 2, WindowSize: 1
+Sent: PacketType: 1, SeqNum: 1, AckNum: 296961, WindowSize: 5
+Received: PacketType: 2, SeqNum: 296961, AckNum: 2, WindowSize: 2
+Received: PacketType: 2, SeqNum: 297985, AckNum: 2, WindowSize: 2
+Sent: PacketType: 1, SeqNum: 1, AckNum: 297985, WindowSize: 5
+Sent: PacketType: 1,

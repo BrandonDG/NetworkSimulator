@@ -11,6 +11,7 @@ struct packet {
 	char data[PAYLOAD];
 	int  WindowSize;
 	int  AckNum;
+	int  Ackd;
 };
 
 typedef struct node node;
@@ -30,7 +31,17 @@ void fillValues(node *n, packet pck) {
 void print(node *lst) {
 	node *p;
 	for (p = lst; p != 0; p = p->next) {
-		printf("%d %d\n", p->data.SeqNum, p->data.AckNum);
+		printf("%d %d %d \n", p->data.SeqNum, p->data.AckNum, p->data.Ackd);
+	}
+}
+
+void ack(node *lst, int acknum) {
+	node *p;
+	for (p = lst; p != 0; p = p->next) {
+		if ((p->data.SeqNum + sizeof(p->data.data)) == acknum) {
+			p->data.Ackd = 1;
+		}
+		//if (acknum == 19457) { p->data.Ackd = 0; }
 	}
 }
 
@@ -91,31 +102,25 @@ int insert_at_end(node **plst, packet pck) {
 	if (newNode == 0) {
 		return 0;
 	}
-	//newNode->data.PacketType = pckt.PacketType;
-	//newNode->data.AckNum = pckt.AckNum;
-	//newNode->data.SeqNum = pckt.SeqNum;
-	//newNode->data.WindowSize = pckt.WindowSize;
-	//strcpy(newNode->data.data, pckt.data);
 	fillValues(newNode, pck);
-	for (tracer = plst; (*tracer)->next != 0; tracer = &(*tracer)->next) { 
+	for (tracer = plst; (*tracer)->next != 0; tracer = &(*tracer)->next) {
 	}
 	(*tracer)->next = newNode;
 	return 1;
 }
 
-int delete_all(node **plst, const char *name) {
+int delete_all(node **plst, packet *pck) {
 	node **tracer;
 	int counter = 0;
 	for (tracer = plst; (*tracer) != 0; ) {
-		/*
-		if (strcmp((*tracer)->data.name, name) == 0) {
+		if (((*tracer)->data.SeqNum + sizeof((*tracer)->data.data)) == pck->AckNum) {
 			node *p = *tracer;
 			*tracer = p->next;
 			free(p);
 			counter++;
 		} else {
 			tracer = &(*tracer)->next;
-		} */
+		}
 	}
 	return counter;
 }
