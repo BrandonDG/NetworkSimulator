@@ -32,13 +32,12 @@
 #include "../list.c"
 
 #define SERVER_TCP_PORT 7005	// Default port
-#define BUFLEN			1024  	// Buffer length
+#define BUFLEN			    1024  	// Buffer length
 #define TRUE            1
-#define PAYLOAD         1024
 
 pthread_mutex_t m = PTHREAD_MUTEX_INITIALIZER;
 pthread_cond_t fi = PTHREAD_COND_INITIALIZER;
-int runner = 0;
+int runner = 1;
 
 struct thread_parameters {
 	struct packet *lspck;
@@ -68,7 +67,7 @@ struct thread_parameters {
 --  of characters, starting pa at index pi.
 -----------------------------------------------------------------------*/
 void setPacketDataValue(char pa[], char va[], unsigned int pi, int s) {
-	for (unsigned int i = 0; i < s; i++) {
+	for (size_t i = 0; i < (size_t)s; i++) {
 		pa[pi++] = va[i];
 	}
 }
@@ -115,7 +114,7 @@ void buildPacket(struct packet* pck, char packetdata[]) {
 --	Maps the data from pck to packetdata for transmission.
 -----------------------------------------------------------------------*/
 void buildPacketData(struct packet pck, char pckdata[]) {
-	char pt[2], seq[7], ack[7], ws[4], pl[BUFLEN];
+	char pt[2], seq[7], ack[7], ws[4];
 	char t;
 	for (unsigned int i = 0; i <= 16; i++) {
 		switch (i) {
@@ -207,7 +206,6 @@ void buildPacketLogMsgR(struct packet pck, FILE *f) {
 --  Stores the results in char *bfr
 -----------------------------------------------------------------------*/
 void getServerMsg(char *bfr, int s) {
-	int m = 0;
 	int btr = BUFLEN;
 	char *bfrp = bfr;
 	recv(s, bfrp, btr, MSG_WAITALL);
@@ -258,33 +256,18 @@ void processTrnsPacket(struct packet* ipck, struct packet* opck) {
 --  thread.
 -----------------------------------------------------------------------*/
 void *getAcks(void *context) {
-	if(runner == 0) {
-		struct thread_parameters *thp = context;
-		int oldtype;
-		pthread_setcanceltype(PTHREAD_CANCEL_ASYNCHRONOUS, &oldtype);
-		for (unsigned int i = 0; i < thp->lspck->WindowSize+1; i++) {
-			getServerMsg(thp->rbuf, thp->sd);
-			buildPacket(thp->rpck, thp->rbuf);
-			ack(thp->h, thp->rpck->AckNum);
-			buildPacketLogMsgR(*(thp->rpck), thp->lf);
-		}
-		runner =1 ;
-		pthread_cond_signal(&fi);
-		return NULL;
-	} else {
-		struct thread_parameters *thp = context;
-		int oldtype;
-		pthread_setcanceltype(PTHREAD_CANCEL_ASYNCHRONOUS, &oldtype);
-		for (unsigned int i = 0; i < thp->lspck->WindowSize; i++) {
-			getServerMsg(thp->rbuf, thp->sd);
-			buildPacket(thp->rpck, thp->rbuf);
-			ack(thp->h, thp->rpck->AckNum);
-			buildPacketLogMsgR(*(thp->rpck), thp->lf);
-		}
-		runner =1 ;
-		pthread_cond_signal(&fi);
-		return NULL;
+	struct thread_parameters *thp = context;
+	int oldtype;
+	pthread_setcanceltype(PTHREAD_CANCEL_ASYNCHRONOUS, &oldtype);
+	for (size_t i = 0; i < (size_t)thp->lspck->WindowSize + runner; i++) {
+		getServerMsg(thp->rbuf, thp->sd);
+		buildPacket(thp->rpck, thp->rbuf);
+		ack(thp->h, thp->rpck->AckNum);
+		buildPacketLogMsgR(*(thp->rpck), thp->lf);
 	}
+	runner = 0;
+	pthread_cond_signal(&fi);
+	return NULL;
 }
 
 /*-----------------------------------------------------------------------
@@ -293,7 +276,7 @@ void *getAcks(void *context) {
 --	DATE:       November 18, 2017
 --
 --	DESIGNER:   Brandon Gillespie & Justen DePourcq
--- 
+--
 --  PROGRAMMER:	Brandon Gillespie
 --
 --	INTERFACE:	int main (int argc, char **argv)
@@ -304,17 +287,17 @@ void *getAcks(void *context) {
 --	main.
 -----------------------------------------------------------------------*/
 int main (int argc, char **argv) {
-	int                sd, port, ws, ac, sc, cut, a;
+	int                sd, port, sc, cut, a;
 	struct hostent	   *hp;
 	struct sockaddr_in server;
 	char               *host, **pptr;
 	char               str[16];
-	char               sbuf[BUFLEN], tbuf[BUFLEN], rbuf[BUFLEN];
+	char               tbuf[BUFLEN], rbuf[BUFLEN];
 	FILE               *f;
 
 	host =	argv[1];	// Host name
 	port =	SERVER_TCP_PORT;
-	
+
 	if(argc > 2) {
 		a = atoi(argv[2]);
 	} else {
@@ -352,8 +335,8 @@ int main (int argc, char **argv) {
 		exit(1);
 	}
 
-	struct packet spck, rpck, lspck, lrpck;
-	
+	struct packet spck, rpck, lspck;
+
 	spck.PacketType = 2;
 	spck.SeqNum = 1;
 	spck.AckNum = 2;
@@ -365,9 +348,9 @@ int main (int argc, char **argv) {
 	buildPacketLogMsgS(spck, f);
 	send(sd, tbuf, BUFLEN, 0);
 	lspck = spck;
-	
+
 	sc = 1;
-	
+
 	while (sc < a) {
 		struct node *head = malloc(sizeof(node));
 		fprintf(stderr, "Window Size: %d \n", lspck.WindowSize);
@@ -375,18 +358,18 @@ int main (int argc, char **argv) {
 		for (unsigned int i = 0; i < lspck.WindowSize; i++) {
 			processTrnsPacket(&lspck, &spck);
 			++sc;
-			
+
 			if(sc >= a && (i + 1) == lspck.WindowSize) {
 				spck.PacketType = 3;
 			}
-			
+
 			buildPacketData(spck, tbuf);
 			buildPacketLogMsgS(spck, f);
 			send(sd, tbuf, BUFLEN, 0);
 			lspck = spck;
-			
-			
-			if (i == 0) { 
+
+
+			if (i == 0) {
 				fillValues(head, spck);
 			}
 
@@ -398,7 +381,7 @@ int main (int argc, char **argv) {
 		struct timespec max_wait;
 		memset(&max_wait, 0, sizeof(max_wait));
 		max_wait.tv_sec = 2;
-		
+
 		pthread_mutex_t m = PTHREAD_MUTEX_INITIALIZER;
 		pthread_cond_t fi = PTHREAD_COND_INITIALIZER;
 		struct timespec abs_time;
@@ -427,10 +410,10 @@ int main (int argc, char **argv) {
 				if (p->data.Ackd == 0) {
 					fprintf(stderr, "Timeout Occured\n");
 					fprintf(f, "Timeout Occured\n");
-					
+
 					buildPacketData(p->data, tbuf);
 					send(sd, tbuf, BUFLEN, 0);
-					
+
 					getServerMsg(rbuf, sd);
 					buildPacket(&rpck, rbuf);
 					rpck.Ackd = 1;
@@ -439,13 +422,13 @@ int main (int argc, char **argv) {
 				}
 			}
 		}
-		
+
 		printf("Done waiting\n");
-		
+
 		if (!err) {
 			pthread_mutex_unlock(&m);
 		}
-		
+
 		if (cut == 1) {
 			lspck.WindowSize = lspck.WindowSize / 2;
 			if (lspck.WindowSize == 0) { lspck.WindowSize = 1; };
